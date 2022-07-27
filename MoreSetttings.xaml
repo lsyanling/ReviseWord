@@ -1,0 +1,23 @@
+﻿<Window x:Class="ReviseWord.MoreSetttings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReviseWord"
+        mc:Ignorable="d"
+        Title="MoreSetttings" Height="150" Width="300" MinHeight="120" MinWidth="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button_LoadWords" Content="加载词库" Click="Button_LoadWords_Click" Margin="10" Opacity="0.7"></Button>
+        <Button x:Name="Button_ClearWords" Content="清空词库" Click="Button_ClearWords_Click" Grid.Column="1" Margin="10" Opacity="0.7"></Button>
+        <Button x:Name="Button_ResetConfigure" Content="清除配置" Click="Button_ResetConfigure_Click" Grid.Row="1" Margin="10" Opacity="0.7"></Button>
+        <TextBox Text="软件版本  1.03" Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" BorderThickness="0"></TextBox>
+    </Grid>
+</Window>
